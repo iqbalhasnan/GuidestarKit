@@ -1,4 +1,8 @@
-source 'https://rubygems.org'
-
-# Specify your gem's dependencies in guidestarkit.gemspec
+source "https://rubygems.org"
 gemspec
+
+group :test do
+  gem "webmock"
+  gem "vcr"
+  gem "rake"
+end
